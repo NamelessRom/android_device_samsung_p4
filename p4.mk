@@ -18,8 +18,8 @@ else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_KERNEL):kernel
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/modules/dhd.ko:system/lib/modules/dhd.ko \
