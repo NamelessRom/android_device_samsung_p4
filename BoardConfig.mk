@@ -33,3 +33,4 @@ TARGET_KERNEL_CONFIG := $(kernelbuild)
 # We have a high res screen, use big font in recovery
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 
+
