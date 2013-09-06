@@ -28,7 +28,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 14200340480
 # Kernel Config
 #TARGET_KERNEL_SOURCE := kernel/samsung/p4_$(kernelversion)
 #TARGET_KERNEL_SOURCE := kernel/samsung/p4
-TARGET_KERNEL_CONFIG := $(kernelbuild)
+#TARGET_KERNEL_CONFIG := $(kernelbuild)
 TARGET_PREBUILT_KERNEL := device/samsung/p4/kernel
 
 # We have a high res screen, use big font in recovery
