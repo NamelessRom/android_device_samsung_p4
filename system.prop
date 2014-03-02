@@ -9,3 +9,6 @@ keyguard.no_require_sim=yes
 ro.com.google.clientidbase=android-samsung
 ro.com.google.clientidbase.gmm=android-samsung
 ro.com.google.clientidbase.yt=android-samsung
+
+# bootloop fix
+sys.disable_ext_animation=1
