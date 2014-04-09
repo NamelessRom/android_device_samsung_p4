@@ -22,7 +22,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/modules/cifs.ko:system/lib/modules/cifs.ko \
     $(LOCAL_PATH)/modules/dhd.ko:system/lib/modules/dhd.ko \
+    $(LOCAL_PATH)/modules/md4.ko:system/lib/modules/md4.ko \
     $(LOCAL_PATH)/modules/nls_utf8.ko:system/lib/modules/nls_utf8.ko \
     $(LOCAL_PATH)/modules/ntfs.ko:system/lib/modules/ntfs.ko \
     $(LOCAL_PATH)/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
@@ -40,7 +42,7 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 $(call inherit-product, device/samsung/p4-common/p4-common.mk)
 
-$(call inherit-product-if-exists, vendor/samsung/p4/p4-vendor.mk)
+$(call inherit-product, vendor/samsung/p4/p4-vendor.mk)
 
 # Cameradata
 PRODUCT_COPY_FILES += \

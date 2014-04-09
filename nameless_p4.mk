@@ -1,16 +1,19 @@
 # Inherit device configuration for p4.
 $(call inherit-product, device/samsung/p4/p4.mk)
 
-# Inherit some common cyanogenmod stuff.
-$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+# Get the prebuilt list of APNs
+$(call inherit-product, vendor/nameless/config/apns.mk)
 
-# Inherit GSM common stuff
-$(call inherit-product, vendor/cm/config/gsm.mk)
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit some common nameless stuff.
+$(call inherit-product, vendor/nameless/config/common.mk)
 
 #
 # Setup device specific product configuration.
 #
-PRODUCT_NAME := cm_p4
+PRODUCT_NAME := nameless_p4
 PRODUCT_BRAND := samsung
 PRODUCT_DEVICE := p4
 PRODUCT_MODEL := GT-P7500
